@@ -10,12 +10,12 @@
   <div class="container">
     <h1>User Management</h1>
 
-    <!-- Form to add a new user -->
-    <form id="productForm" action="/product" method="POST">
-      <label for="productName">Product Name: <input type="text" id="productName"  required></label>
-      <label for="productPrice">Price: <input type="number" id="productPrice"  required></label>
-      <button type="submit" value="Submit">Order Product</button>
-    </form>
+  <!-- Form to add a new user -->
+  <form id="productForm" action="/product" method="POST">
+    <label for="productName">Product Name: <input type="text" id="productName" name="Name" required></label>
+    <label for="productPrice">Price: <input type="number" id="productPrice" name="Price" required></label>
+    <button type="submit" value="Submit">Order Product</button>
+  </form>
 
     <!-- Display the list of users -->
     <h2>Customer Order</h2>
@@ -26,7 +26,6 @@
           <th>Product Name</th>
           <th>Price</th>
         </tr>
-        
       </thead>
       <tbody>
         <!-- User rows will be dynamically added here -->
